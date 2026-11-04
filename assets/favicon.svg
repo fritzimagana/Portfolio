@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#f4f0e8"/>
+  <rect y="15" width="32" height="1.5" fill="#6d92aa"/>
+  <text x="16" y="13" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#1b262c">FM</text>
+</svg>
