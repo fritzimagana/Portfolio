@@ -84,7 +84,7 @@ nav a:hover { text-decoration: underline; }
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(14rem, 0.7fr);
   gap: 3rem;
-  align-items: end;
+  align-items: center;
 }
 
 .eyebrow {
@@ -122,35 +122,14 @@ h1 {
 
 .links a { font-weight: 500; }
 
-.mark {
+.portrait {
   margin: 0;
-  min-height: 22rem;
-  padding: 1.2rem 1.2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background:
-    linear-gradient(180deg, #d5e2ea 0%, #f3e4da 42%, #f3e4da 46%, #9eb8c8 46.15%, #7ea3b8 100%);
-  color: var(--deep);
 }
 
-.horizon {
+.portrait img {
   display: block;
-  height: 0;
-}
-
-.initials {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 4.5rem;
-  letter-spacing: -0.04em;
-  line-height: 0.85;
-}
-
-.mark figcaption {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  width: 100%;
+  height: auto;
 }
 
 .band {
@@ -349,7 +328,6 @@ footer {
   }
 
   .hero { padding-top: 2rem; }
-  .mark { min-height: 14rem; }
   .case { grid-template-columns: 3rem minmax(0, 1fr); }
   .case-grid .case:first-child { padding-right: 0; }
   .case-grid .case:last-child {
