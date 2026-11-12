@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>GitHub · Fritzi Magaña</title>
+  <meta name="description" content="Program hubs and a retrospective dashboard are published from GitHub.">
+  <link rel="canonical" href="https://fritzimagana.github.io/Portfolio/tools/github.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css?v=examples1">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-kicker">Fritzi Magaña</span>
+        <span class="brand-mark">Program manager</span>
+      </a>
+      <nav class="top-nav" aria-label="Page">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#work">Projects</a>
+        <a href="../index.html#approach">Approach</a>
+        <a href="../index.html#tools">Tools</a>
+        <a href="../index.html#path">Path</a>
+      </nav>
+      <a class="header-home" href="../index.html#tools">Tools</a>
+      <a class="apply-btn" href="mailto:fritzimagana@gmail.com">Email</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="skill-hero">
+      <p class="hero-eyebrow">PM tooling</p>
+      <h1>GitHub</h1>
+      <p class="hero-lede">The program hub and the retrospective dashboard are published from here. Partners get one destination. The retrospective turns feedback into themes and commitments.</p>
+    </section>
+
+    <section class="example">
+      <h2>Program hub</h2>
+      <p>One place for what the program is, the agenda, who is involved, and the words partners can use.</p>
+      <figure class="shot">
+        <img src="../assets/examples/program-hub.png" alt="Program hub home page, with the hour, the date, and the sections partners can open.">
+        <figcaption class="shot-note">Example. Internal names and links removed.</figcaption>
+      </figure>
+    </section>
+
+    <section class="example">
+      <h2>Retrospective dashboard</h2>
+      <p>Feedback becomes a few themes and the commitments the next cycle will carry. Raw comments stay off the public view.</p>
+      <figure class="shot">
+        <img src="../assets/examples/retro-overview.png" alt="Retrospective overview with an overall rating and six themes.">
+        <figcaption class="shot-note">Example. The response text stays off the page.</figcaption>
+      </figure>
+    </section>
+
+    <section id="local-skill" class="local-skill" hidden></section>
+  </main>
+  <footer class="site-footer">
+    <div>Fritzi Magaña · Portland, Oregon</div>
+    <div class="footer-links">
+      <a href="mailto:fritzimagana@gmail.com">fritzimagana@gmail.com</a>
+      <a href="https://www.linkedin.com/in/fritzi-magana/" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/fritzimagana" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+  <script>
+  (function () {
+    var host = location.hostname;
+    if (host !== "localhost" && host !== "127.0.0.1") return;
+    var slot = document.getElementById("local-skill");
+    if (!slot) return;
+    fetch("../private/github.html", { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("missing");
+        return res.text();
+      })
+      .then(function (html) {
+        slot.innerHTML = html;
+        slot.hidden = false;
+      })
+      .catch(function () {});
+  })();
+  </script>
+</body>
+</html>
